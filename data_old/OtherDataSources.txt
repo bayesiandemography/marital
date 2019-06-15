@@ -1,0 +1,7 @@
+The UN has counts by sex and 5 year age group, for 1990, 1995, бн, 2010, for ever-married and currently married, from the Chinese censuses and 1% surveys. https://esa.un.org/ffps/Index.html#/maritalStatusData
+
+There's some annual age-specific fertility rates for China here: http://www.un.org/en/development/desa/population/publications/dataset/fertility/wfd2015.shtml
+
+We can get estimates of death counts, by sex and 5-year age group, for 5-year periods from here: https://esa.un.org/unpd/wpp/DataQuery/
+
+

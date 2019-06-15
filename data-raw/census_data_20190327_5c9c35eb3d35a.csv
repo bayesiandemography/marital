@@ -1,0 +1,8 @@
+"Components of Population Growth for Region Summary"
+Region,Country,Year,"Births per 1,000 population","Deaths per 1,000 population","Net Number of Migrants per 1,000 population","Rate of natural increase (percent)","Growth rate (percent)",Population,Births,Deaths,"Net Number of Migrants","Natural Increase","Population Change"
+"Custom Region",China,2010,11.9,6.8,-0.3,0.51,0.47,1336680939,15906503,9129531,-454472,6776972,6322501
+"Custom Region",China,2011,11.9,7.0,-0.4,0.50,0.46,1342946472,16034781,9360337,-483461,6674444,6190983
+"Custom Region",China,2012,12.1,7.1,-0.4,0.50,0.46,1349160868,16324847,9592534,-512681,6732313,6219632
+"Custom Region",China,2013,12.1,7.3,-0.4,0.48,0.44,1355286257,16385411,9825825,-542115,6559585,6017471
+"Custom Region",China,2014,12.3,7.4,-0.4,0.49,0.45,1361344333,16730922,10060335,-571765,6670587,6098823
+"Custom Region",China,2015,12.5,7.5,-0.4,0.50,0.45,1367485388,17079892,10297165,-601694,6782728,6181034
