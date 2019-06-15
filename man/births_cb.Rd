@@ -4,10 +4,13 @@
 \name{births_cb}
 \alias{births_cb}
 \title{Estimates of births in China from the US Census Bureau}
-\format{An array with dimension "time".}
+\format{An array with dimensions "status_parent",
+"status_child", and "time"}
 \source{
 Calculated from data downloaded from the
-International Database (IDB) on 28 March 2019.
+US Census Bureau International Data Base
+table "Components of Population Growth",
+downloaded on 28 March 2019.
 }
 \usage{
 births_cb
@@ -15,5 +18,9 @@ births_cb
 \description{
 Total numbers of births in China, by 5-year period, as estimated
 by the United States Census Bureau.
+}
+\details{
+We assume that all births are to married women,
+and that all children are born single.
 }
 \keyword{datasets}
