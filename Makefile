@@ -6,6 +6,8 @@ all: data/births_cb.rda \
      data/births_un.rda \
      data/deaths_cb.rda \
      data/deaths_un.rda \
+     data/population_cb.rda \
+     data/population_un.rda \
      data/marital_status_1990.rda \
      data/marital_status_2000_2010.rda \
      data/marriages_divorces.rda \
@@ -35,6 +37,17 @@ data/deaths_cb.rda : data-raw/deaths_cb.R \
 
 data/deaths_un.rda : data-raw/deaths_un.R \
                      data-raw/NumberDeaths-20171201121407.xlsx
+	Rscript $< --age_max $(AGE_MAX)
+
+
+## Total population
+
+data/population_cb.rda : data-raw/population_cb.R \
+                         data-raw/census_data_20190327_5c9c3633ee912.csv
+	Rscript $< --age_max $(AGE_MAX)
+
+data/population_un.rda : data-raw/population_un.R \
+                         data-raw/UNdata_Export_20180121_001507260.csv
 	Rscript $< --age_max $(AGE_MAX)
 
 
