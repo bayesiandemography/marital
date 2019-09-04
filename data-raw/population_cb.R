@@ -24,7 +24,9 @@ population_cb <- read_csv("data-raw/census_data_20190327_5c9c3633ee912.csv",
     filter(age != "Total") %>%
     gather(key = sex, value = count, Male, Female) %>%
     dtabs(count ~ age + sex + time) %>%
-    Counts()
+    Counts() %>%
+    collapseIntervals(dimension = "age", breaks = age_breaks) %>%
+    as.array()
 
 save(population_cb,
      file = "data/population_cb.rda")
