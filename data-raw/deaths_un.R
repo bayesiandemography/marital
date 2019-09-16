@@ -1,23 +1,12 @@
 
 library(methods)
-library(docopt)
 library(dplyr)
 library(tidyr)
 library(magrittr)
 library(readxl)
 library(dembase)
 
-'
-Usage:
-deaths_un.R [options]
-
-Options:
---age_max [default: 75]
-' -> doc
-opts <- docopt(doc)
-age_max <- opts$age_max %>% as.integer()
-    
-age_breaks <- seq(0, age_max, 5)
+age_breaks <- seq(0, 60, 5)
 
 deaths_un <- read_xlsx("data-raw/NumberDeaths-20171201121407.xlsx",
                        sheet = 2,
