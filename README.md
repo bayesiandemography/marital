@@ -16,7 +16,7 @@ output: github_document
 An R package with data required for creating a demographic account
 for marriage in China, 1990--2015.
 
-The raw data is sourced from the UN and the National Bureau of Statisics of China.
+The raw data is sourced from the UN and the National Bureau of Statistics of China.
 
 Pacakge **marital** can be installed from GitHub using
 ``` r
