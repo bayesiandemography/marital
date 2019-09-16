@@ -7,6 +7,7 @@ all: data/births_un.rda \
      data/marriages_divorces.rda \
      data/remarriages.rda \
      data/conc_marital_status.rda \
+     README.md \
      documentation
 
 
@@ -58,7 +59,6 @@ data/conc_marital_status.rda : data-raw/conc_marital_status.R
 	Rscript $<
 
 
-
 ## Documentation
 
 .PHONY: documentation
@@ -66,6 +66,13 @@ documentation:
 	Rscript -e "devtools::document()"
 
 
+## README
+
+README.md : README.rmd
+	Rscript -e 'knitr::knit("README.Rmd")'
+
+
+## Clean-up
 
 .PHONY: clean
 clean:
