@@ -1,11 +1,9 @@
 
-AGE_MAX = 75
-
 .PHONY: all
 all: data/births_un.rda \
      data/deaths_un.rda \
      data/census.rda \
-     data/popn_sruvey.rda \
+     data/popn_survey.rda \
      data/marriages_divorces.rda \
      data/remarriages.rda \
      data/conc_marital_status.rda \
@@ -29,14 +27,14 @@ data/deaths_un.rda : data-raw/deaths_un.R \
 ## Census counts
 
 data/census.rda : data-raw/census.R \
-                  data-raw/UNdata_Export_20180121_001507260.csv
+                  data-raw/UNdata_Export_20180121_001507260.csv \
                   data-raw/UNdata_Export_20190614_062418893.csv
 	Rscript $<
 
 
 ## Population survey
 
-data/popn_survey.rda : data-raw/popn_survey.R \
+data/popn_survey.rda : data-raw/china_statistical_yearbook/popn_survey.R \
                        data-raw/china_statistical_yearbook/CSYB2006_Table4.11.xls \
                        data-raw/china_statistical_yearbook/cyb2016_table_2.13.csv
 	Rscript $<

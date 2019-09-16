@@ -20,7 +20,9 @@ Total numbers of births in China, by age and 5-year period, as estimated
 by the United Nations Population Division.
 }
 \details{
-We assume that all births are to married women,
-and that all children are born single.
+We assume that children are born single, and that all births
+are to married women. Because married
+women must be aged 20 or higher, we recode births to 15-19 year
+olds as births to 20-24 year olds.
 }
 \keyword{datasets}
