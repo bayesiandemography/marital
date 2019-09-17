@@ -41,7 +41,8 @@ popn_survey_15 <- read_csv("data-raw/china_statistical_yearbook/cyb2016_table_2.
 
 popn_survey <- bind_rows(popn_survey_05, popn_survey_15) %>%
     mutate(status = factor(status, levels = c("Single", "Married", "Divorced", "Widowed"))) %>%
-    dtabs(count ~ sex + status + time)
+    mutate(age = "15+") %>%
+    dtabs(count ~ age + sex + status + time)
 
 save(popn_survey,
      file = "data/popn_survey.rda")
