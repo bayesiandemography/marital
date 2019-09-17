@@ -4,6 +4,7 @@ all: data/births_un.rda \
      data/deaths_un.rda \
      data/census.rda \
      data/popn_survey.rda \
+     data/popn_survey_fraction.rda \
      data/marriages_divorces.rda \
      data/remarriages.rda \
      data/conc_marital_status.rda \
@@ -38,6 +39,9 @@ data/census.rda : data-raw/census.R \
 data/popn_survey.rda : data-raw/china_statistical_yearbook/popn_survey.R \
                        data-raw/china_statistical_yearbook/CSYB2006_Table4.11.xls \
                        data-raw/china_statistical_yearbook/cyb2016_table_2.13.csv
+	Rscript $<
+
+data/popn_survey_fraction.rda : data-raw/china_statistical_yearbook/popn_survey_fraction.R
 	Rscript $<
 
 

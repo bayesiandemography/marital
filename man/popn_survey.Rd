@@ -22,4 +22,7 @@ status from 2005 and 2015 Population Sample Surveys.
 The sampling fraction in 2005 was 1.325\% and the sampling
 fraction in 2015 was 1.55\%.
 }
+\seealso{
+\code{\link{popn_survey_fraction}}
+}
 \keyword{datasets}

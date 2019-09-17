@@ -8,6 +8,8 @@
 #' 
 #' @format An array with dimensions "age", "sex", "status", and "time".
 #'
+#' @seealso \code{\link{popn_survey_fraction}}
+#'
 #' @source Table 4.11 from the 2006 Chinese Statistical Yearbook,
 #' and Table 2.13 from the 2016 Chinese Statistical Yearbook,
 #' avaliable online at website for the National Bureau of
