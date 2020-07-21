@@ -4,8 +4,10 @@
 \name{births_un}
 \alias{births_un}
 \title{Estimates of births in China from the UN Population Division}
-\format{An array with dimensions "status_parent",
-"status_child", "age", and "time"}
+\format{
+An array with dimensions "status_parent",
+"status_child", "age", and "time"
+}
 \source{
 Table "Number of births by age of mother (thousands)"
 in the United Nations Population Division online database

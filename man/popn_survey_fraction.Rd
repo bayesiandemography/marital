@@ -4,7 +4,9 @@
 \name{popn_survey_fraction}
 \alias{popn_survey_fraction}
 \title{Sampling fractions from Population Sample Survey}
-\format{An array with dimension "time".}
+\format{
+An array with dimension "time".
+}
 \source{
 Table 4.11 from the 2006 Chinese Statistical Yearbook,
 and Table 2.13 from the 2016 Chinese Statistical Yearbook,

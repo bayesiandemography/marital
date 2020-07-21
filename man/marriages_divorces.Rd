@@ -4,8 +4,10 @@
 \name{marriages_divorces}
 \alias{marriages_divorces}
 \title{Numbers of marriages and divorces in China}
-\format{An array with dimensions "status_orig", "status_dest",
-and "time".}
+\format{
+An array with dimensions "status_orig", "status_dest",
+and "time".
+}
 \source{
 JUNNI TO COMPLETE
 }

@@ -4,7 +4,9 @@
 \name{popn_survey}
 \alias{popn_survey}
 \title{Counts from Population Sample Survey}
-\format{An array with dimensions "age", "sex", "status", and "time".}
+\format{
+An array with dimensions "age", "sex", "status", and "time".
+}
 \source{
 Table 4.11 from the 2006 Chinese Statistical Yearbook,
 and Table 2.13 from the 2016 Chinese Statistical Yearbook,

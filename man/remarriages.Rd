@@ -4,8 +4,10 @@
 \name{remarriages}
 \alias{remarriages}
 \title{Numbers of remarriages in China}
-\format{An array with dimensions "status_orig", "status_dest",
-and "time".}
+\format{
+An array with dimensions "status_orig", "status_dest",
+and "time".
+}
 \source{
 JUNNI TO COMPLETE
 }

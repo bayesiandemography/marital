@@ -4,8 +4,10 @@
 \name{deaths_un}
 \alias{deaths_un}
 \title{Estimates of deaths in China from the UN Population Division}
-\format{An array with dimensions "age",
-"sex", and "time"}
+\format{
+An array with dimensions "age",
+"sex", and "time"
+}
 \source{
 Table "Number of deaths by age and sex (thousands)"
 in the United Nations Population Division online database

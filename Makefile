@@ -3,6 +3,7 @@
 all: data/births_un.rda \
      data/deaths_un.rda \
      data/census.rda \
+     data/census_status.rda \
      data/popn_survey.rda \
      data/popn_survey_fraction.rda \
      data/marriages_divorces.rda \
@@ -26,11 +27,18 @@ data/deaths_un.rda : data-raw/deaths_un.R \
 	Rscript $<
 
 
-## Census counts
+## Census counts, no marital status
 
 data/census.rda : data-raw/census.R \
-                  data-raw/UNdata_Export_20180121_001507260.csv \
-                  data-raw/UNdata_Export_20190614_062418893.csv
+                  data-raw/UNdata_Export_20180121_001507260.csv
+	Rscript $<
+
+
+## Census counts, with marital status
+
+data/census_status.rda : data-raw/census_status.R \
+                         data/census.rda \
+                         data-raw/UNdata_Export_20190614_062418893.csv
 	Rscript $<
 
 

@@ -4,7 +4,9 @@
 \name{conc_marital_status}
 \alias{conc_marital_status}
 \title{Concordance between marital statuses}
-\format{An data.frame with columns "from" and "to".}
+\format{
+An data.frame with columns "from" and "to".
+}
 \usage{
 conc_marital_status
 }
