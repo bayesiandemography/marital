@@ -1,5 +1,4 @@
 
-library(methods)
 library(dplyr)
 library(magrittr)
 library(tidyr)
@@ -17,7 +16,6 @@ births_un <- read_xlsx("data-raw/NumberBirthsAgeMother-20171130020714.xlsx",
     filter(Location == "China") %>%
     gather(key = "age", value = "count", `15-19`:`45-49`) %>%
     select(age = age, time = Time, count) %>%
-    mutate(age = if_else(age == "15-19", "20-24", age)) %>% # recode 15-19 to 20-24
     tidyr::extract(col = time, into = c("start", "stop"),
                    regex = "([:digit:]+) - ([:digit:]+)",
                    convert = TRUE) %>%
