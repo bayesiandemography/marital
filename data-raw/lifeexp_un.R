@@ -13,7 +13,7 @@ lifeexp_un <- read_xlsx("data-raw/LifeExpectancy-20200727034920.xlsx",
     select(sex = Sex, `1990 - 1995`:`2010 - 2015`) %>%
     gather(key = time, value = value, -sex) %>%
     separate(col = time, into = c("start", "end"), convert = TRUE) %>%
-    mutate(time = paste(start - 1, end, sep = "-")) %>%
+    mutate(time = paste(start + 1, end, sep = "-")) %>%
     filter(sex != "Both sexes combined") %>%
     dtabs(value ~ sex + time)
 
