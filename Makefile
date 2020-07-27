@@ -2,6 +2,7 @@
 .PHONY: all
 all: data/births_un.rda \
      data/deaths_un.rda \
+     data/lifeexp_un.rda \
      data/census.rda \
      data/census_status.rda \
      data/popn_survey.rda \
@@ -24,6 +25,10 @@ data/births_un.rda : data-raw/births_un.R \
 
 data/deaths_un.rda : data-raw/deaths_un.R \
                      data-raw/NumberDeaths-20171201121407.xlsx
+	Rscript $<
+
+data/lifeexp_un.rda : data-raw/lifeexp_un.R \
+                      data-raw/LifeExpectancy-20200727034920.xlsx
 	Rscript $<
 
 
